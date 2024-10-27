@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style>
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Viagem</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Pacotes</li>
+                <li>Taxas</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+        <h1>Venha realizar a viagem dos seus sonhos!</h1>
+    </header>
+
+    <section>
+        <strong><h2>Conheça nossos pacotes</h2></strong>
+        <p>
+            Bem-vindo à nossa seção "Conheça Nossos Pacotes", onde apresentamos as 
+            melhores opções para a sua próxima aventura! Aqui, você encontra uma variedade de 
+            pacotes de viagem cuidadosamente selecionados para proporcionar experiências 
+            inesquecíveis, seja qual for o seu destino preferido ou estilo de viagem. 
+            Nossa missão é oferecer oportunidades que vão além de uma simples viagem: 
+            são jornadas para explorar o mundo, se conectar com novas culturas e criar memórias
+             que durarão para sempre.
+
+            Pacotes Nacionais
+            Para quem deseja explorar as belezas do Brasil, nossos pacotes nacionais trazem
+            roteiros incríveis para destinos como as praias paradisíacas do Nordeste, as
+            montanhas e cachoeiras de Minas Gerais, e as cidades históricas de São Paulo e
+            Rio de Janeiro. Se você procura aventura, descanso ou um pouco dos dois, nosso
+            s pacotes foram pensados para todos os gostos.
+            
+            Praias do Nordeste
+            Descubra as águas cristalinas de Porto de Galinhas, os coqueirais de Alagoas,
+            e a atmosfera vibrante de Natal. Pacotes de 7 a 10 dias, com opções de hospedagem
+            all-inclusive, passeios turísticos e atividades aquáticas como mergulho e snorkel.
+            
+            Cidades Históricas
+            Explore as cidades coloniais de Ouro Preto, Paraty e Tiradentes. Ideal para quem 
+            quer mergulhar na história do Brasil, esses pacotes incluem visitas guiadas a 
+            museus, igrejas, e roteiros gastronômicos pelos sabores típicos de cada região.
+            
+            Aventura na Serra
+            Se você prefere destinos mais voltados para a natureza e aventura, nossos pacotes 
+            para a Serra Gaúcha e Serra da Mantiqueira são perfeitos. Trilhas, cachoeiras e 
+            hospedagens em chalés aconchegantes estão entre os principais atrativos.  
+        </p> <hr>
+        
+            <p>
+            <strong>Gramado:</strong> Gramado é um destino encantador conhecido por suas paisagens deslumbrantes e clima ameno. 
+            Com suas ruas charmosas e arquitetura europeia, é um lugar ideal para quem busca uma experiência romântica e relaxante. 
+            Não deixe de visitar o famoso Festival de Cinema e a gastronomia local, repleta de delícias.
+        </p>
+        <p>
+            <strong>Porto Seguro:</strong> Porto Seguro é um dos destinos mais procurados do Brasil, famoso por suas praias paradisíacas e vida noturna animada. 
+            Com praias como Taperapuã e Arraial d'Ajuda, oferece um mix perfeito de relaxamento e diversão. É o lugar ideal para famílias e jovens que desejam aproveitar o sol e a cultura local.
+        </p>
+        <p>
+            <strong>Rio de Janeiro:</strong> O Rio de Janeiro é conhecido mundialmente por suas belezas naturais e atrações icônicas, como o Cristo Redentor e o Pão de Açúcar. 
+            Com suas praias famosas, como Copacabana e Ipanema, é o destino perfeito para quem busca tanto aventuras urbanas quanto momentos de descanso à beira-mar.
+        </p>
+        <a href="https://www.lipsum.com/feed/html">Link</a>
+
+        <hr>
+
+        <figure>
+            <img src="img.nossos pacotes/Gramado.Jpeg" alt="Uma foto da entrada de Gramado">
+            <figcaption>Gramado</figcaption>
+        </figure>
+        <figure>
+            <img src="img.nossos pacotes/PortoSeguro.jpeg" alt="Praia em Porto Seguro">
+            <figcaption>Porto Seguro</figcaption>
+        </figure>
+        <figure>
+            <img src="img.nossos pacotes/Rio.jpeg" alt="Foto do Rio de Janeiro visto de cima, por trás do Cristo Redentor.">
+            <figcaption>Rio de Janeiro</figcaption>
+        </figure>
+    </section>
+
+    <video controls width="300" height="500">
+        <source src="Videos.doc/RJ.mp4" type="video/mp4">
+        <source src="Videos.doc/RJ.webm" type="video/webm">
+        Seu navegador não suporta o formato do vídeo.
+    </video>
+
+    <section>
+        <h2>Orçamento</h2>
+        <form method="GET" action="">
+            <fieldset>
+                <legend>Dados de Cadastro</legend>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="data-ida">Data de ida</label><br>
+                <input type="date" id="data-ida" name="data-ida" required><br><br>
+
+                <label for="data-volta">Data de volta</label><br>
+                <input type="date" id="data-volta" name="data-volta"><br><br>
+
+                <label for="qtd-pessoas">Quantidade de pessoas</label><br>
+                <input type="number" id="qtd-pessoas" name="qtd-pessoas" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quais serviços são do seu interesse?</legend>
+                <label><input type="checkbox" name="servicos[]" value="Passagens"> Compra de passagens</label><br>
+                <label><input type="checkbox" name="servicos[]" value="Hospedagem"> Reservas</label><br>
+                <label><input type="checkbox" name="servicos[]" value="Veículos"> Veículos</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <label><input type="radio" name="formapagamento" value="Cartão de Crédito"> Cartão de Crédito</label><br>
+                <label><input type="radio" name="formapagamento" value="Boleto Bancário"> Boleto</label><br>
+                <label><input type="radio" name="formapagamento" value="Pix"> Pix</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo para pagamento</legend>
+                <select name="prazopagamento">
+                    <option value="a-vista">À vista</option>
+                    <option value="3x-sem-juros">3x Sem Juros</option>
+                    <option value="6x-com-juros">6x Com Juros</option>
+                </select>
+            </fieldset>
+
+            <label for="comentarios">Comentário</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea><br><br>
+
+            <button type="submit">Salvar</button>
+        </form>
+    </section>
+
+    <br><br>
+
+    <section>
+        <h2>Taxas e Serviços</h2>
+        <p>Confira aqui nossas taxas de serviços</p>
+        <table border="1">
+            <caption>Descrição dos serviços e respectivos valores</caption>
+            <thead>
+                <tr>
+                    <th>Serviços</th>
+                    <th>Valores</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reserva de Hotel</td>
+                    <td>R$200,00</td>
+                </tr>
+                <tr>
+                    <td>Passagens</td>
+                    <td>R$450,00</td>
+                </tr>
+                <tr>
+                    <td>Aluguel de Carros</td>
+                    <td>R$80,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>Projeto desenvolvido por Enzo Santos</p>
+    </footer>
+</body>
+</html>
